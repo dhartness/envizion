@@ -59,6 +59,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("-0.0761904761904762em")
                 .setWidth("28.266666666666666em")
                 .setHeight("4.3428571428571425em")
+                .setZIndex(1002)
                 .setSelMode("multibycheckbox")
                 .setLabelSize("1.5em")
                 .setLabelPos("top")
