@@ -31,6 +31,43 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("240px")
             );
             
+            host.xui_ui_block8.append(
+                xui.create("xui.UI.Block")
+                .setHost(host,"xui_ui_block13")
+                .setLeft("-0.0761904761904762em")
+                .setTop("-0.0761904761904762em")
+                .setWidth("28.266666666666666em")
+                .setHeight("11.504761904761905em")
+            );
+            
+            host.xui_ui_block13.append(
+                xui.create("xui.UI.RadioBox")
+                .setHost(host,"xui_ui_radiobox2")
+                .setItems([
+                    {
+                        "id" : "a",
+                        "caption" : "New",
+                        "imageClass" : "xui-icon-number1"
+                    },
+                    {
+                        "id" : "b",
+                        "caption" : "Existing",
+                        "imageClass" : "xui-icon-number2"
+                    }
+                ])
+                .setLeft("-0.0761904761904762em")
+                .setTop("-0.0761904761904762em")
+                .setWidth("28.266666666666666em")
+                .setHeight("4.3428571428571425em")
+                .setSelMode("multibycheckbox")
+                .setLabelSize("1.5em")
+                .setLabelPos("top")
+                .setLabelCaption("Recipe")
+                .setLabelHAlign("left")
+                .setCheckBox(true)
+                .setValue("a")
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
