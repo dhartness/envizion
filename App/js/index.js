@@ -19,7 +19,18 @@ xui.Class('App', 'xui.Module',{
         iniComponents : function(){
             // [[Code created by CrossUI RAD Studio
             var host=this, children=[], append=function(child){children.push(child.get(0));};
-
+            
+            append(
+                xui.create("xui.UI.Block")
+                .setHost(host,"xui_ui_block8")
+                .setSpaceUnit("px")
+                .setName("enviz_setup_tab")
+                .setLeft("150px")
+                .setTop("360px")
+                .setWidth("640px")
+                .setHeight("240px")
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
@@ -28,7 +39,8 @@ xui.Class('App', 'xui.Module',{
         customAppend : function(parent, subId, left, top){
             // "return false" will cause all the internal UI controls will be added to the parent panel
             return false;
-        }
+        },
+        autoDestroy:false
         /*,
         // To determine how properties affects this module
         propSetAction : function(prop){
